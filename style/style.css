@@ -481,8 +481,13 @@ span {
     margin: 3rem 0;
   }
 
+  .logo {
+    margin-left: 2rem;
+  }
+
   .home {
     flex-direction: column;
+    margin-left: 2rem;
   }
 
   .home-content h3 {
