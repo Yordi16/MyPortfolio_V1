@@ -97,7 +97,7 @@ ScrollReveal().reveal(".home-content p, .about-content", {
 
 // Typing effect dengan Typed.js
 const typed = new Typed(".multiple-text", {
-  strings: ["UI/UX Design", "Frontend Development", "Backend Development"],
+  strings: ["UI/UX Design", "Frontend Developer", "Backend Developer"],
   typeSpeed: 70,
   backSpeed: 70,
   backDelay: 1000,
