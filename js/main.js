@@ -66,40 +66,44 @@ navLinks.forEach((link) => {
   });
 });
 
-// Konfigurasi ScrollReveal
+// Konfigurasi ScrollReveal yang disederhanakan
 ScrollReveal().reveal(".home-content, heading", {
   origin: "top",
-  distance: "80px",
-  duration: 2000,
+  distance: "40px", // Mengurangi jarak untuk animasi yang lebih ringan
+  duration: 1000, // Mengurangi durasi untuk animasi yang lebih cepat
   delay: 200,
+  reset: true, // Reset animasi untuk elemen yang keluar dan masuk viewport
 });
 
+// ScrollReveal untuk elemen lain
 ScrollReveal().reveal(".home-img, .services-container, .portfolio-box, .contact form", {
   origin: "bottom",
-  distance: "80px",
-  duration: 2000,
+  distance: "40px", // Mengurangi jarak
+  duration: 1000, // Durasi lebih cepat
   delay: 200,
-});
-
-ScrollReveal().reveal(".home-contact h1, .about-img", {
-  origin: "left",
-  distance: "80px",
-  duration: 2000,
-  delay: 200,
-});
-
-ScrollReveal().reveal(".home-content p, .about-content", {
-  origin: "right",
-  distance: "80px",
-  duration: 2000,
-  delay: 200,
+  reset: true,
 });
 
 // Typing effect dengan Typed.js
 const typed = new Typed(".multiple-text", {
   strings: ["UI/UX Design", "Frontend Developer", "Backend Developer"],
-  typeSpeed: 70,
-  backSpeed: 70,
-  backDelay: 1000,
+  typeSpeed: 100, // Memperlambat kecepatan ketik
+  backSpeed: 100, // Memperlambat kecepatan backspace
+  backDelay: 1000, // Menunggu lebih lama sebelum menghapus teks
   loop: true,
+});
+
+// Smooth scroll untuk anchor link
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    window.scrollTo({
+      top: targetElement.offsetTop - 50, // Offset untuk menghindari menutupi konten header
+      behavior: "smooth",
+    });
+  });
 });
