@@ -28,7 +28,9 @@ function handleScroll() {
       navLinks.forEach((link) => {
         link.classList.remove("active");
       });
-      document.querySelector(`header nav a[href*="${id}"]`).classList.add("active");
+      document
+        .querySelector(`header nav a[href*="${id}"]`)
+        .classList.add("active");
     }
   });
 
@@ -76,7 +78,7 @@ ScrollReveal().reveal(".home-content, heading", {
 });
 
 // ScrollReveal untuk elemen lain
-ScrollReveal().reveal(".home-img, .services-container, .portfolio-box, .contact form", {
+ScrollReveal().reveal(".home-img, .portfolio-box, .contact form", {
   origin: "bottom",
   distance: "40px", // Mengurangi jarak
   duration: 1000, // Durasi lebih cepat
@@ -86,7 +88,7 @@ ScrollReveal().reveal(".home-img, .services-container, .portfolio-box, .contact 
 
 // Typing effect dengan Typed.js
 const typed = new Typed(".multiple-text", {
-  strings: ["UI/UX Design", "Frontend Developer", "Backend Developer"],
+  strings: ["Student", "Graphic Designer", "Beginner Programmer"],
   typeSpeed: 100, // Memperlambat kecepatan ketik
   backSpeed: 100, // Memperlambat kecepatan backspace
   backDelay: 1000, // Menunggu lebih lama sebelum menghapus teks

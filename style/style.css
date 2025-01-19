@@ -157,7 +157,8 @@ span {
 }
 
 .home-img img:hover {
-  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color), 0 0 100px var(--main-color);
+  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
+    0 0 100px var(--main-color);
 }
 
 @keyframes animasigambar {
@@ -190,7 +191,8 @@ span {
 }
 
 .about-img img:hover {
-  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color), 0 0 100px var(--main-color);
+  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color),
+    0 0 100px var(--main-color);
 }
 
 .heading {
@@ -219,50 +221,6 @@ span {
   margin-left: 3rem;
 }
 /* About End */
-
-/* Services Start */
-.services h2 {
-  margin-bottom: 5rem;
-}
-
-.services-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.services-container .services-box {
-  flex: 1 1 30rem;
-  background: var(--snd-bg-color);
-  padding: 3rem 2rem 4rem;
-  border-radius: 2rem;
-  text-align: center;
-  border: 0.2rem solid var(--bg-color);
-  transition: 0.5s ease;
-}
-
-.services-container .services-box:hover {
-  border-color: var(--main-color);
-  transform: scale(1.02);
-}
-
-.services-box i {
-  font-size: 7rem;
-  color: var(--main-color);
-}
-
-.services-box h3 {
-  font-size: 2.6rem;
-  margin-top: 1rem;
-}
-
-.services-box p {
-  font-size: 1.6rem;
-  margin: 0.5rem 0 2rem;
-}
-/* Services End */
 
 /* Portfolio Start */
 .portfolio {
@@ -436,10 +394,6 @@ span {
     padding: 10rem 3%;
   }
 
-  .services {
-    padding: 7rem;
-  }
-
   .portfolio {
     padding-bottom: 7rem;
   }
@@ -519,10 +473,6 @@ span {
   .about-img img {
     width: 70vw;
     margin-top: 4rem;
-  }
-
-  .services h2 {
-    margin-bottom: 3rem;
   }
 
   .portfolio h2 {
